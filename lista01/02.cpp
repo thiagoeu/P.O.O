@@ -9,14 +9,14 @@ int main(void)
     float custoInicial = custoDeFabrica();
     float custoFinal = custoAposTaxas(custoInicial);
 
-    cout    << "O custo inicial do automovel foi de: RS"
-            << custoInicial 
-            << " custo final do automovel serah de RS"
-            <<custoFinal;
-    
+    cout << "O custo inicial do automovel foi de: RS"
+         << custoInicial
+         << " custo final do automovel serah de RS"
+         << custoFinal;
 }
 
-float custoDeFabrica(){
+float custoDeFabrica()
+{
     using std::cin;using std::cout;using std::endl;
     float valorInicial = 0;
     cout << "Insira do custo de fabrica para o automovel: " << endl;
@@ -24,7 +24,8 @@ float custoDeFabrica(){
     return valorInicial;
 }
 
-float custoAposTaxas(float custoInicial){
-    float valorFinal = custoInicial + (custoInicial*0.55);
-    return valorFinal;    
+float custoAposTaxas(float custoInicial)
+{
+    float valorFinal = custoInicial + (custoInicial * 0.55);
+    return valorFinal;
 }

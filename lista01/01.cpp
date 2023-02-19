@@ -3,7 +3,10 @@
 
 using namespace std;
 
+//menu para receber o nome do usuario
 string recebeNome();
+
+//menu para receber o valor do salario atual e realizar a conversão para o novo valor
 float ReajustaSalario();
 
 
