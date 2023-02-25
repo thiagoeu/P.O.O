@@ -19,12 +19,8 @@ int main(void)
     float altura = recebeAltura();
     float peso = recebePeso();
     float imc = peso/pow(altura,2);
-
     string nivelImc = grauIMC(imc);
-    
     imprimeResultado(peso,altura,imc,nivelImc);
-
-
     return 0;
 }
 

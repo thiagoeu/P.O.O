@@ -15,7 +15,6 @@ int main(void)
     string eleitor = verificaSeVota(idade);
 
     imprimeResultado(nome, idade, eleitor);
-    
     return 0;
 } 
 

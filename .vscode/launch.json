@@ -4,7 +4,7 @@
             "name": "C/C++: cpp.exe Compilar e depurar o arquivo ativo",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${C:/Users/Thiago/Desktop/Faculdade/P.O.O/lista02}\\${05}.exe",
+            "program": "${C:/Users/Thiago/Desktop/Faculdade/P.O.O/lista02}\\${07}.exe",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${fileDirname}",
