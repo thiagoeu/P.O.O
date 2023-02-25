@@ -6,21 +6,18 @@ using std::string;
 string recebeNome();
 int recebeIdade();
 string verificaSeVota(int idade);
-
+void imprimeResultado(string nome, int idade, string eleitor);
 
 int main(void)
-{
-     using std::cout; using std::cin; using std::endl;
-   
+{  
     string nome = recebeNome();
     int idade = recebeIdade();
-
     string eleitor = verificaSeVota(idade);
 
-    cout << nome << " " << idade;
-
+    imprimeResultado(nome, idade, eleitor);
+    
     return 0;
-}
+} 
 
 string recebeNome(){
     using std::cout; using std::cin; using std::endl;
@@ -38,6 +35,17 @@ int recebeIdade(){
     return idade;
 }
 
-string verificaSeVota(idade) {
-    
+string verificaSeVota(int idade) {
+    if(idade < 16){
+        return "Nao eleitor";
+    }else if (idade >= 18 && idade <= 65){
+        return "Voto Obrigatorio";
+    }
+    return "Voto Facultativo";
+       
+}
+
+void imprimeResultado(string nome, int idade, string eleitor){
+    using std::cout; using std::cin; using std::endl;
+    cout << nome << " tem: " << idade << " anos " << " " << eleitor;
 }
