@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
 
+using std::string;
+
 int main(void)
 {
-    using std::cout; using std::cin; using std::endl; using std::string;
+    using std::cout; using std::cin; using std::endl;
 
 
    
